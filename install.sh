@@ -206,7 +206,7 @@ main() {
   local nouveau="OFF"
 
   # Load preset if specified
-  if [[ "$1" == "--preset" && -n "$2" ]]; then
+  if [[ "${1:-}" == "--preset" && -n "${2:-}" ]]; then
     load_preset "$2"
   fi
 
