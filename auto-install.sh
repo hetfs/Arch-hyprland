@@ -18,11 +18,12 @@ RESET="$(tput sgr0)"
 
 # Variables
 Distro="Arch-Hyprland"
-Github_URL="https://github.com/JaKooLit/$Distro.git"
+Github_URL="https://github.com/hetfs/Arch-hyprland.git"
 Distro_DIR="$HOME/$Distro"
 
 printf "\n%.0s" {1..1}
 
+# Ensure git is installed
 if ! command -v git &>/dev/null; then
   echo "${INFO} Git not found! ${SKY_BLUE}Installing Git...${RESET}"
   if ! sudo pacman -S git --noconfirm; then
@@ -33,16 +34,17 @@ fi
 
 printf "\n%.0s" {1..1}
 
+# Clone or update repo
 if [ -d "$Distro_DIR" ]; then
   echo "${YELLOW}$Distro_DIR exists. Updating the repository... ${RESET}"
-  cd "$Distro_DIR"
+  cd "$Distro_DIR" || exit
   git stash && git pull
   chmod +x install.sh
   ./install.sh
 else
   echo "${MAGENTA}$Distro_DIR does not exist. Cloning the repository...${RESET}"
   git clone --depth=1 "$Github_URL" "$Distro_DIR"
-  cd "$Distro_DIR"
+  cd "$Distro_DIR" || exit
   chmod +x install.sh
   ./install.sh
 fi
