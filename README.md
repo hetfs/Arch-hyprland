@@ -96,7 +96,7 @@ If you prefer **PulseAudio**:
 ### Auto Install (recommended)
 
 ```bash
-sh <(curl -fsSL https://github.com/hetfs/Arch-hyprland/blob/main/auto-install.sh)
+sh <(curl -fsSL https://raw.githubusercontent.com/hetfs/Arch-hyprland/main/auto-install.sh)
 ```
 
 > 🐟 **Fish Shell Users**: Use manual install instead.
