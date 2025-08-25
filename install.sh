@@ -335,8 +335,8 @@ main() {
     done
 
     if [[ "$dots_selected" == "OFF" ]]; then
-      if ! whiptail --title "KooL Hyprland Dot Files" --yesno \
-        "You have not selected to install the pre-configured KooL Hyprland dotfiles.\n\nKindly NOTE that if you proceed without Dots, Hyprland will start with default vanilla Hyprland configuration and I won't be able to give you support.\n\nWould you like to continue install without KooL Hyprland Dots or return to choices/options?" \
+      if ! whiptail --title "HETFS Hyprland Dot Files" --yesno \
+        "You have not selected to install the pre-configured HETFS Hyprland dotfiles.\n\nKindly NOTE that if you proceed without Dots, Hyprland will start with default vanilla Hyprland configuration and I won't be able to give you support.\n\nWould you like to continue install without KooL Hyprland Dots or return to choices/options?" \
         --yes-button "Continue" --no-button "Return" 15 90; then
         log_message "🔙 Returning to options..."
         continue

@@ -115,7 +115,7 @@ chmod +x install.sh
 ## 🗑️ Uninstallation
 
 ```bash
-./uninstall.sh
+sh uninstall.sh
 ```
 
 > ⚠️ May destabilize your system. Ensure you have a `timeshift` or `snapper` backup first.
@@ -132,10 +132,9 @@ source ~/.zshrc
 
 * Reboot or log out to apply
 * Default theme: **agnosterzak** (external oh-my-zsh theme)
-* Change themes:
-
-  * Press `SUPER + SHIFT + O` → pick theme → restart terminal
-  * Or manually edit `~/.zshrc` → update `ZSH_THEME="theme-name"`
+* Press `SUPER + SHIFT + O` → pick theme → restart terminal
+* Or manually edit `~/.zshrc` → update `ZSH_THEME="theme-name"`
+* You can find more themes from this [OH-MY-ZSH-THEMES](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
 
 ---
 
