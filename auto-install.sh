@@ -4,21 +4,21 @@ set -e # Exit immediately on error
 # ─────────────────────────────────────────────
 #  Configuration
 # ─────────────────────────────────────────────
-readonly DISTRO="Arch-Hyprland"
-readonly GITHUB_URL="https://github.com/hetfs/Arch-hyprland.git"
-readonly DISTRO_DIR="$HOME/$DISTRO"
-readonly INSTALL_SCRIPT="install.sh"
+DISTRO="Arch-Hyprland"
+GITHUB_URL="https://github.com/hetfs/Arch-hyprland.git"
+DISTRO_DIR="$HOME/$DISTRO"
+INSTALL_SCRIPT="install.sh"
 
 # Colors for output messages
-readonly OK="$(tput setaf 2)[OK]$(tput sgr0)"
-readonly ERROR="$(tput setaf 1)[ERROR]$(tput sgr0)"
-readonly NOTE="$(tput setaf 3)[NOTE]$(tput sgr0)"
-readonly INFO="$(tput setaf 4)[INFO]$(tput sgr0)"
-readonly WARN="$(tput setaf 3)[WARN]$(tput sgr0)"
-readonly MAGENTA="$(tput setaf 5)"
-readonly YELLOW="$(tput setaf 3)"
-readonly SKY_BLUE="$(tput setaf 6)"
-readonly RESET="$(tput sgr0)"
+OK="$(tput setaf 2)[OK]$(tput sgr0)"
+ERROR="$(tput setaf 1)[ERROR]$(tput sgr0)"
+NOTE="$(tput setaf 3)[NOTE]$(tput sgr0)"
+INFO="$(tput setaf 4)[INFO]$(tput sgr0)"
+WARN="$(tput setaf 3)[WARN]$(tput sgr0)"
+MAGENTA="$(tput setaf 5)"
+YELLOW="$(tput setaf 3)"
+SKY_BLUE="$(tput setaf 6)"
+RESET="$(tput sgr0)"
 
 # ─────────────────────────────────────────────
 #  Functions
