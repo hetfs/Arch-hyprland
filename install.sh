@@ -304,7 +304,7 @@ main() {
     "zsh" "Install zsh shell with Oh-My-Zsh?" "OFF"
     "pokemon" "Add Pokemon color scripts to your terminal?" "OFF"
     "rog" "Are you installing on Asus ROG laptops?" "OFF"
-    "dots" "Download and install pre-configured KooL Hyprland dotfiles?" "OFF"
+    "dots" "Download and install pre-configured HETFS Hyprland dotfiles?" "OFF"
   )
 
   # Get selected options
@@ -459,7 +459,7 @@ main() {
       execute_script "rog.sh"
       ;;
     dots)
-      log_message "${INFO} Installing pre-configured ${SKY_BLUE}KooL Hyprland dotfiles...${RESET}"
+      log_message "${INFO} Installing pre-configured ${SKY_BLUE}HETFS Hyprland dotfiles...${RESET}"
       execute_script "dotfiles-main.sh"
       ;;
     *)
